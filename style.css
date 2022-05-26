@@ -1,0 +1,109 @@
+
+
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-3deg) skew(25deg);
+}
+.contact li:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #d87dc9;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+.contact li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #f1acee;
+    transform-origin: right;
+    transform: skewy(-40deg);
+}
+.contact li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 50px;
+    margin: 0 10px;
+}
+.contact li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #d87dc9;
+    color: rgba(255,255,255,0.2);
+    font-size: 30px !important;
+}
+.contact li:hover span{
+    z-index: 1000;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.05);
+}
+.contact li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.contact li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+.contact li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+.contact li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+.contact li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+.contact li:nth-child(1):hover span{
+    background: #3b5999;
+}
+.contact li:nth-child(2):hover span{
+    background: #55acee;
+}
+.contact li:nth-child(3):hover span{
+    background: #25d366;
+}
+.contact li:nth-child(4):hover span{
+    background: #0077B5;
+}
+.contact li:nth-child(5):hover span{
+    background: #e4405f;
+}
