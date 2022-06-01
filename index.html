@@ -113,14 +113,131 @@
                         <button id="clickReserveTable" type="button" class="btn btn-warning font-weight-bold  "> Reserve
                             Table </button>
                     </a> -->
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"
+
+                    <!-- === bài cũ=== -->
+
+                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-html="true"
                         title="Or Call us at 
-                <br> <strong>+852 12345678</strong> " data-placement="bottom" href="#reserve_table"> Reserve Table</a>
+                <br> <strong>+852 12345678</strong> " data-placement="modal" data-target="#reseve"> Reserve Table</a>
+                    <!-- 
+xoá tooltip làm thành modal -->
+                    <!-- <span class="col-4 mr-auto navbar-text ">
+    <a role="button" class="btn btn-block nav-link btn-warning"
+    data-html="true"  title="Or Call us at <br><strong>+852 12345678</strong>"
+    data-toggle="modal" data-target="#reseve">Reserve Table</a>
+</span> -->
+
+
                 </div>
+
             </div>
         </div>
+        </div>
     </header>
+    <div id="reseve" class="modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="content">
 
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h3 class="modal-title pl-3"> ReserveaTable </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-group row ">
+
+                            <div class="col-3">
+                                Number of Guests
+
+                            </div>
+                            <div class="col-9">
+                                <form>
+                                    <div class="radio d-flex ">
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1"
+                                                value="customEx">
+                                            <label class="custom-control-label" for="customRadio">1</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1"
+                                                value="customEx">
+                                            <label class="custom-control-label" for="customRadio">2</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1"
+                                                value="customEx">
+                                            <label class="custom-control-label" for="customRadio">3</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1"
+                                                value="customEx">
+                                            <label class="custom-control-label" for="customRadio">4</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1"
+                                                value="customEx">
+                                            <label class="custom-control-label" for="customRadio">5</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1"
+                                                value="customEx">
+                                            <label class="custom-control-label" for="customRadio">6</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="form-group row">
+
+                            <label class="col col-md-3 ">section</label>
+                            <div class="btn-group col col-md-9" role="group">
+                                <a role="button" class="btn btn-success btn-sm col-md-3"> non-smoking</a>
+                                <a role="button" class="btn btn-danger btn-sm col-md-3"> Smoking</a>
+
+                            </div>
+                            <div class="col col-md-4"></div>
+
+                        </div>
+
+                    
+
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-3 col-form-label ">date and time</label>
+                        <div class="col-5 col-md-4">
+                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="date">
+                        </div>
+                        <div class="col-5 col-md-4">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="time">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                    <div class="modal-footer justify-content-center">
+
+                        <a role="button" class="btn btn-secondary btn-facebook" data-dismiss="modal">cancel</a>
+                        <a role="button" class="btn btn-primary"> resever</a>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
 
 
 
