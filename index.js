@@ -23,5 +23,20 @@ $("#carouselButton").click(function(){
                 }
 });
 
+// ======= Lap 4 =======
 
+
+
+
+
+$(document).ready(function(){
+ $("#loginBtn").click(function(){
+  $("#loginModal").modal();
+});
+});
+$(document).ready(function(){
+  $("#reseveBtn").click(function(){
+   $("#reseve").modal();
+});
+});
 
